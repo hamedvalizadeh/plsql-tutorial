@@ -1,11 +1,9 @@
-/*
 create or replace package TYPE_API is
   type vc_ix_tab_ty is table of varchar2(100) index by pls_integer;
   type vc_tab_ty is table of varchar2(100);
   type va4_arr_ty is varray(4) of varchar2(100);
 end TYPE_API;
 /
-*/
 
 declare
   names TYPE_API.vc_ix_tab_ty;
