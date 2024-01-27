@@ -35,6 +35,11 @@ insert into birds
 values
   ('bird_2', 'species_2', color_va_ty('gray'));
 
+insert into birds
+  (gunus, species, color)
+values
+  ('bird_3', 'species_3', color_va_ty('blue', 'yellow', 'red'));
+
 commit;
 /
 
@@ -57,6 +62,12 @@ insert into birds_habitats
   (gunus, species, country)
 values
   ('bird_2', 'species_2', 'norway');
+
+insert into birds_habitats
+  (gunus, species, country)
+values
+  ('bird_3', 'species_3', 'italy');
+  
 commit;
 /
 
