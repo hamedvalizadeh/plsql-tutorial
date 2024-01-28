@@ -59,7 +59,32 @@ begin
     dbms_output.put_line(rec.family_name);
   end loop;
 end;
+/
 
+-------------------------------Example 3-----------------------------------
+
+create or replace package aa_pkg is
+  type strings_as_ty is table of varchar(100) index by pls_integer;
+end aa_pkg;
+/
+
+declare
+  happyfamily aa_pkg.strings_as_ty;
+begin
+  happyfamily(1) := 'n1';
+  happyfamily(2) := 'n2';
+  happyfamily(3) := 'n3';
+  happyfamily(4) := 'n4';
+  happyfamily(5) := 'n5';
+  happyfamily(6) := 'n6';
+
+  for rec in (select column_value family_name
+                from table(happyfamily)
+               order by family_name) loop
+    dbms_output.put_line(rec.family_name);
+  end loop;
+end;
+/
 
 
 
