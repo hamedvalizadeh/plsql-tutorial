@@ -35,7 +35,7 @@ open the app after installation and create 2 connections, one for `sys` user wit
 
 
 
-![](D:\Tutorial\PLSQL\plsql-tutorial\sqlserver_connection_dialogue.png)
+![](sqlserver_connection_dialogue.png)
 
 
 
