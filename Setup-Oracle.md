@@ -50,3 +50,10 @@ GRANT CREATE SESSION TO Hamed;
 GRANT UNLIMITED TABLESPACE TO Hamed;
 ```
 
+
+
+# Language Parsing
+
+it is possible that after setting up oracle database server in your machine, you can not see non English characters correctly. to prevent it there is at least one solution as follow:
+
+- in your environment variables set `NLS_LANG` as `AMERICAN_AMERICA.AR8MSWIN1256`.   
