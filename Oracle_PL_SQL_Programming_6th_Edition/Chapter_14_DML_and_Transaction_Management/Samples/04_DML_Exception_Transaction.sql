@@ -65,6 +65,6 @@ begin
   dbms_output.put_line('Count Before Delete (Normal): ' || l_tab_count);
 exception
   when others then
-    dbms_output.put_line('Count After Delete (Normal): ' || books_count());
-    dbms_output.put_line('Count Before Delete (Normal): ' || l_tab_count);
+    dbms_output.put_line('Count After Delete (Exception): ' || books_count());
+    dbms_output.put_line('Count Before Delete (Exception): ' || l_tab_count);
 end;
