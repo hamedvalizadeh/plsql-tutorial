@@ -41,3 +41,9 @@ update [table] set row = [row type variable] where [row type variable].[unique c
 
 
 
+# Autonomous Transaction
+
+it is possible to isolate a block of code transaction by defining `AUTONOMOUS_TRANSACTION` pragma at the beginning of it. by isolation we mean to separate the block transaction from main transaction, and consequently we will be able to commit or rollback block actions with no affect on main transaction. some of the most common applications of this kind of transactions are as follow:
+
+- logging
+- trigger   
